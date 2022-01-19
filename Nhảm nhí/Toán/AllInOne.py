@@ -174,6 +174,8 @@ def sohoanhaotu1toin():
         for i in range(1, n):
             if n%i == 0:
                 tong= tong + i
+            if tong > n:
+                break
         if tong == n:
             shh.append(n)
     for n in range(1,toi+1):
@@ -248,7 +250,7 @@ if __name__=="__main__":
             yn=input('Bạn có muốn in list id ra không? (y/n)')
             if yn=='y':
                 print(
-                    '0: Thoát'
+                    '0: Thoát\n'
                     '1: Phương trình bậc hai 1 ẩn\n'
                     '2: Phương trình bậc nhất 1 ẩn\n'
                     '3: Giai thừa\n'
